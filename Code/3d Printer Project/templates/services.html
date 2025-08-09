@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}Services - Print Guard{% endblock %}
+{% block content %}
+
+<section class="services-section">
+    <div class="services-container">
+        <div class="services-header">
+            <h2>Our Services</h2>
+            <div class="services-underline"></div>
+            <p class="services-intro">
+                Comprehensive 3D printing fault detection and prevention solutions powered by advanced AI technology
+            </p>
+        </div>
+
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>Real-Time Monitoring</h3>
+                <p>Continuous surveillance of your 3D printer with instant fault detection and alerts. Monitor temperature, speed, and layer quality in real-time.</p>
+                <div class="service-features">
+                    <span class="feature-tag">Live Stream</span>
+                    <span class="feature-tag">Instant Alerts</span>
+                    <span class="feature-tag">24/7 Coverage</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Predictive Analytics</h3>
+                <p>AI-powered analysis that predicts potential failures before they occur. Our machine learning models learn from your printing patterns.</p>
+                <div class="service-features">
+                    <span class="feature-tag">AI Prediction</span>
+                    <span class="feature-tag">Pattern Learning</span>
+                    <span class="feature-tag">Risk Assessment</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Preventive Maintenance</h3>
+                <p>Proactive maintenance recommendations based on printer performance data. Prevent costly failures and extend printer lifespan.</p>
+                <div class="service-features">
+                    <span class="feature-tag">Maintenance Alerts</span>
+                    <span class="feature-tag">Performance Tracking</span>
+                    <span class="feature-tag">Optimization Tips</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>Comprehensive Reporting</h3>
+                <p>Detailed analytics and performance reports with actionable insights. Track success rates, identify trends, and optimize your workflow.</p>
+                <div class="service-features">
+                    <span class="feature-tag">Detailed Analytics</span>
+                    <span class="feature-tag">Performance Metrics</span>
+                    <span class="feature-tag">Export Data</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-cta">
+            <div class="cta-content">
+                <h3>Ready to Get Started?</h3>
+                <p>Experience the future of 3D printing with our advanced fault detection system.</p>
+                <div class="cta-buttons">
+                    <a href="/predictor" class="primary-btn">Try Predictor</a>
+                    <a href="/contact" class="secondary-btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

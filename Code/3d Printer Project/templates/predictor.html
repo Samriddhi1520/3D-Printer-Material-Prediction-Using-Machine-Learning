@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Predictor - Print Guard{% endblock %}
+{% block content %}
+
+<section class="predictor-bg" id="predictor">
+  <div class="form-container">
+    <h2>3D Printer Fault Predictor</h2>
+    <form method="POST" action="/predict">
+      <input type="number" name="x_value" placeholder="Enter X value" step="any" required>
+      <input type="number" name="y_value" placeholder="Enter Y value" step="any" required>
+      <input type="number" name="z_value" placeholder="Enter Z value" step="any" required>
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+      <div class="prediction-result">
+        <h3>Prediction Result:</h3>
+        <p>{{ prediction }}</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}

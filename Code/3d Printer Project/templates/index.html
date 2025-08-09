@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Guard - 3D Fault Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">PRINT GUARD</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#predictor">Predictor</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero-home">
+    <div class="hero-content">
+      <h1>Predict & Prevent: 3D Printing Fault Detection</h1>
+      <p>Eliminate wasted prints & downtime. Print smarter, not harder.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-header">
+        <h2>ABOUT US</h2>
+        <div class="about-underline"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Never Waste <strong>Another Print</strong></h3>
+          <p>Stop wasting time and materials on failed prints! We understand the frustration of encountering 3D printing faults mid-project. Our innovative system utilizes machine learning to analyze printer data and predict potential issues before they occur.</p>
+          
+          <div class="about-points">
+            <div class="point">
+              <span class="point-number">01</span>
+              <p>Addresses the frustration of encountering 3D printing faults.</p>
+            </div>
+            <div class="point">
+              <span class="point-number">02</span>
+              <p>Introducing a trustable solution for fault prediction.</p>
+            </div>
+            <div class="point">
+              <span class="point-number">03</span>
+              <p>Emphasizes the time and material savings users can achieve.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="{{ url_for('static', filename='images/3d-printer.jpg') }}" alt="3D Printer with glowing lights" class="printer-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+    <div class="services-container">
+      <div class="services-header">
+        <h2>SERVICES</h2>
+        <div class="services-underline"></div>
+        <p class="services-intro">Ensure flawless 3D printing with our comprehensive fault prediction service.</p>
+      </div>
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Real-Time Monitoring</h3>
+          <p>Live printer stream analysis to catch issues instantly.</p>
+          <div class="service-features">
+            <span class="feature-tag">Live Stream</span>
+            <span class="feature-tag">Instant Alerts</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Advanced Analytics</h3>
+          <p>AI-powered insights to predict and prevent failures.</p>
+          <div class="service-features">
+            <span class="feature-tag">AI Analysis</span>
+            <span class="feature-tag">Predictions</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3>Preventive Maintenance</h3>
+          <p>Fix issues before they ruin a print.</p>
+          <div class="service-features">
+            <span class="feature-tag">Early Detection</span>
+            <span class="feature-tag">Prevention</span>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>Detailed Reports</h3>
+          <p>Know your machine health and performance trends.</p>
+          <div class="service-features">
+            <span class="feature-tag">Health Monitoring</span>
+            <span class="feature-tag">Trends</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREDICTOR -->
+  <section id="predictor" class="predictor-bg">
+    <div class="form-container">
+      <h2>3D PRINTER FAULT PREDICTOR</h2>
+      <p>Enter the X, Y, and Z directions to predict potential faults.</p>
+      <form action="/predict" method="POST">
+        <input type="text" name="x" placeholder="X value" required>
+        <input type="text" name="y" placeholder="Y value" required>
+        <input type="text" name="z" placeholder="Z value" required>
+        <button type="submit">Predict</button>
+      </form>
+      {% if prediction %}
+        <div class="prediction-result">
+          <h3>Prediction Result</h3>
+          <p>{{ prediction }}</p>
+          <a class="back-btn" href="/">Back</a>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2>CONTACT US</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
