@@ -2,6 +2,10 @@
 
 ![image alt](https://github.com/Samriddhi1520/3D-Printer-Material-Prediction-Using-Machine-Learning/blob/bba836a46918da3d4e3fc6b97ec3814259d45b65/Websitepage.png)
 
+![image alt](https://github.com/Samriddhi1520/3D-Printer-Material-Prediction-Using-Machine-Learning/blob/d98c11b01e85867babe0474b99fee5829fc7901a/Prediction.png)
+
+![image alt](https://github.com/Samriddhi1520/3D-Printer-Material-Prediction-Using-Machine-Learning/blob/d98c11b01e85867babe0474b99fee5829fc7901a/Result.png)
+
 **Predict, Perfect, Print: Revolutionizing 3D Manufacturing**
 
 ![Last Commit](https://img.shields.io/github/last-commit/Samriddhi1520/3D-Printer-Material-Prediction-Using-Machine-Learning)
