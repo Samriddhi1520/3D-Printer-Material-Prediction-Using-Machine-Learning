@@ -62,19 +62,24 @@ Build **3D-Printer-Material-Prediction-Using-Machine-Learning** from the source 
    git clone https://github.com/Samriddhi1520/3D-Printer-Material-Prediction-Using-Machine-Learning
 
 2. **Navigate to the project directory**
-cd 3D-Printer-Material-Prediction-Using-Machine-Learning
+   ```bash
+   cd 3D-Printer-Material-Prediction-Using-Machine-Learning
 
-3. Install dependencies
+3. **Install dependencies**
+   ```bash
    pip install -r requirements.txt
 
  ### Usage
- Run the project
- python app.py
+ Run the project:
+   ```bash
+   python app.py
 
- Open your browser and visit
+ ### Open your browser and visit
+   ```bash
  http://127.0.0.1:5000/
 
- Testing
+ ### Testing
+   ```bash
  pytest
 
 
