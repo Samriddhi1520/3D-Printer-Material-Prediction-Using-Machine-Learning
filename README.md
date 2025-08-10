@@ -68,11 +68,13 @@ Build **3D-Printer-Material-Prediction-Using-Machine-Learning** from the source 
 3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
+   
+---
 
- ### Usage
+### Usage
+
  Run the project:
-   ```bash
-   python app.py
+  python app.py
 
  Open your browser and visit
  http://127.0.0.1:5000/
