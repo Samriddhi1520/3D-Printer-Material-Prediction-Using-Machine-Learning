@@ -74,12 +74,10 @@ Build **3D-Printer-Material-Prediction-Using-Machine-Learning** from the source 
    ```bash
    python app.py
 
- ### Open your browser and visit
-   ```bash
+ Open your browser and visit
  http://127.0.0.1:5000/
 
- ### Testing
-   ```bash
+ Testing
  pytest
 
 
